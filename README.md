@@ -26,7 +26,7 @@ To send a notification to all users, add a NotificaitonMessage to the page._noti
 
 To send a notification to the logged in user, add a NotificationMessage to the current_user:
 
-`current_user._notification_messages << NotificaitonMessage.say('Title','Body of the message')`
+`Volt.current_user._notification_messages << NotificaitonMessage.say('Title','Body of the message')`
 
 ## Contributing
 

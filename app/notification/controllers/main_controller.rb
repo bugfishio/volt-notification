@@ -8,11 +8,14 @@ module Notification
 				volt_notify(notification)
 			end
 
-      #current_user._notification_messages.on('added') do |pos|
-      #  pos.then do | notification |
-      #    `volt_notify(notification)`
-      #  end
-      #end if current_user
+      Volt.current_user.then do |user |
+        user._notification_messages.on('added') do |pos|
+
+          puts "message_added #{pos.to_s}"
+          notification = page._notification_messages[pos]
+          volt_notify(notification)
+        end if user
+      end
 		end
 
     def auto_close_time
