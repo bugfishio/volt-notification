@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94356a28-2fdb-4764-939d-b02f5ae1b450" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/notification/controllers/main_controller.rb" afterPath="$PROJECT_DIR$/app/notification/controllers/main_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/volt/notification/version.rb" afterPath="$PROJECT_DIR$/lib/volt/notification/version.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/volt-notification.gemspec" afterPath="$PROJECT_DIR$/volt-notification.gemspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
