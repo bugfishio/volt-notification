@@ -2,17 +2,18 @@ module Notification
   class MainController < Volt::ModelController
 
 		def index
-			page._notification_messages.on('added') do |pos|
+      puts 'Hello from Notification Component Setup'
+			page.notification_messages.on('added') do |pos|
         puts "message_added #{pos.to_s}"
-        notification = page._notification_messages[pos]
+        notification = page.notification_messages[pos]
 				volt_notify(notification)
 			end
 
       Volt.current_user.then do |user |
-        user._notification_messages.on('added') do |pos|
+        user.notification_messages.on('added') do |pos|
 
           puts "message_added #{pos.to_s}"
-          notification = page._notification_messages[pos]
+          notification = page.notification_messages[pos]
           volt_notify(notification)
         end if user
       end
